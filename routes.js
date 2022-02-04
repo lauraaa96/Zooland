@@ -15,10 +15,10 @@ router.put    ("/animales/:id",  cors(), controller.updateAnimal);  // Update
 router.post   ("/animales",      cors(), controller.createAnimal);  // Create
 
 router.get    ("/personal",     cors(), controller.readPersonas);  // Read All
-router.get    ("/personal/:id", cors(), controller.readPersonal);   // Read
-router.delete ("/personal/:id", cors(), controller.deletePersonal); // Delete
-router.put    ("/personal/:id", cors(), controller.updatePersonal); // Update
-router.post   ("/personal",     cors(), controller.createPersonal); // Create
+router.get    ("/personal/:id", cors(), controller.readPersona);   // Read
+router.delete ("/personal/:id", cors(), controller.deletePersona); // Delete
+router.put    ("/personal/:id", cors(), controller.updatePersona); // Update
+router.post   ("/personal",     cors(), controller.createPersona); // Create
 
 router.get    ("/clientes",      cors(), controller.readClientes);   // Read All
 router.get    ("/clientes/:id",  cors(), controller.readCliente);    // Read

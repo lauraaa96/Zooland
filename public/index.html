@@ -52,39 +52,39 @@
         }
 
         .get {
-            border-color: #61affe;
-            background: rgba(97, 175, 254, .1);
+            border-color: #363b1e;
+            background: rgba(220, 254, 97, 0.1);
         }
 
         .post {
-            border-color: #49cc90;
-            background: rgba(73, 204, 144, .1);
+            border-color: #17446b;
+            background: rgba(73, 184, 204, 0.1);
         }
 
         .delete {
-            border-color: #f93e3e;
+            border-color: #5a0e0e;
             background: rgba(249, 62, 62, .1);
         }
 
         .update {
-            border-color: #fca130;
+            border-color: #a7702d;
             background: rgba(252, 161, 48, .1);
         }
 
         .http-get {
-            background: #61affe;
+            background: #363b1e;
         }
 
         .http-post {
-            background: #49cc90;
+            background: #17446b;
         }
 
         .http-delete {
-            background: #f93e3e;
+            background: #531616;
         }
 
         .http-update {
-            background: #fca130;
+            background: #995e16;
         }
 
         .resumen {
@@ -98,7 +98,8 @@
             display: flex;
             align-items: center;
             padding: 1px;
-            background: #fdebc9;;
+            background: #acf327;
+            font-size: 2em;
         }
 
         .metodo-verbo {
@@ -110,7 +111,7 @@
             border-radius: 3px;
             text-shadow: 0 1px 0 rgba(0, 0, 0, .1);
             font-family: sans-serif;
-            color: #fff;
+            color: #acf327;
         }
 
         .metodo-ruta {
@@ -136,16 +137,18 @@
             border-bottom: 5px rgb(102, 100, 99);
             margin-bottom: 5px;
         }
+        body{
+            background-color: rgb(66, 151, 87);
+        }
     </style>
 </head>
 
 <body>
     <div class="cabecera">
-        <img src="/favicon.png">
-        <h1>Tienda Backend</h1>
+        <img src="logo.png" width="200em" height="120em">
+        <h1>ZOOLAND</h1>
     </div>
-    <p><small>Frontend en <a href="https://tiendafrontend.now.sh/">https://tiendafrontend.now.sh</a></small></p>
-
+</br>
     <p><b>API RESTful</b></p>
 
     <div class="bloque">
@@ -178,7 +181,7 @@
     </div>
 
     <div class="bloque">
-        <h4>ANIMALES</h4>
+        <h4>PERSONAL</h4>
         <div class="resumen metodo get">
             <span class="metodo-verbo http-get">GET</span>
             <span class="metodo-ruta">/api/animales</span>

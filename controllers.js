@@ -1,4 +1,4 @@
-const { Cliente, Articulo, Animal, Personal } = require("./models.js");
+const { Cliente, Articulo, Animal, Persona } = require("./models.js");
 
 
 // ------- CLIENTES
@@ -133,29 +133,29 @@ exports.createAnimal = (req, res) =>
 // ------ PERSONAL
 
 exports.readPersonas = (req, res) =>
-    Personal.find({}, (err, data) => {
+    Persona.find({}, (err, data) => {
         if (err) res.json({ error: err });
         else     res.json(data);
     });
 
 
-exports.readPersonal = (req, res) =>
-    Personal.findOne({ _id: req.params.id }, (err, data) => {
+exports.readPersona = (req, res) =>
+    Persona.findOne({ _id: req.params.id }, (err, data) => {
         if (err) res.json({ error: err });
         else     res.json(data);
     });
 
 
-exports.deletePersonal = (req, res) =>
-    Personal.findOneAndRemove({ _id: req.params.id }, (err, data) => {
+exports.deletePersona = (req, res) =>
+    Persona.findOneAndRemove({ _id: req.params.id }, (err, data) => {
         if (err) res.json({ error: err });
         else     res.json(data);
     });
 
 
 
-exports.updatePersonal = (req, res) =>
-    Personal.findOneAndUpdate(
+exports.updatePersona = (req, res) =>
+    Persona.findOneAndUpdate(
         { _id: req.params.id },
         { $set: { nombre: req.body.nombre, apellidos: req.body.apellidos } }, 
         (err, data) => {
@@ -165,8 +165,8 @@ exports.updatePersonal = (req, res) =>
     );
 
 
-exports.createPersonal = (req, res) =>
-    new Personal({ nombre: req.body.nombre, apellidos: req.body.apellidos })
+exports.createPersona = (req, res) =>
+    new Persona({ nombre: req.body.nombre, apellidos: req.body.apellidos })
     .save((err, data) => {
         if (err) res.json({ error: err });
         else     res.json(data);

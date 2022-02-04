@@ -12,7 +12,7 @@ const Animal = mongoose.model('Animal',
   new mongoose.Schema({ nombre: String, tipo: String })
 );
 
-const Personal = mongoose.model('Personal',
+const Persona = mongoose.model('Persona',
   new mongoose.Schema({ nombre: String, apellidos: String })
 );
 
@@ -20,7 +20,7 @@ module.exports = {
   Cliente: Cliente,
   Articulo: Articulo,
   Animal: Animal,
-  Personal: Personal
+  Persona: Persona
 }
 
 // Otra forma más corta:
